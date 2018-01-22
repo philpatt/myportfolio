@@ -1,6 +1,7 @@
 body{
 	display: inline-block;
 	width: 100vw;
+	font-family: 'Roboto Mono', monospace;
 
 }
 
@@ -8,7 +9,7 @@ body{
     width: 100%;
     text-align: center;
   }
-  a{
+  a {
   	text-decoration: none;
   }
 .footer {
