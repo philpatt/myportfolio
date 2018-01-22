@@ -1,16 +1,16 @@
 body{
 	display: inline-block;
 	width: 100vw;
-	font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #808182;
 
 }
-
   .navbar-nav {
     width: 100%;
     text-align: center;
   }
   a {
-  	text-decoration: none;
+  	text-decoration: none !important;
   }
 .footer {
     position: static;
@@ -24,7 +24,6 @@ body{
 	width: auto;
 	height: 800px;
 	text-align: center;
-	background-color: #808182;
 	margin-top: none;
 }
 
@@ -34,22 +33,26 @@ h2 {
 	border: 5px solid #808182;
 
 }
-
 .top-bar{
-	padding-top: 100px; 
-	height:750px;
+	padding-top: 100px;
+  width: 80%; 
+	height:550px;
+  margin: 0px;
+
+
 }
 .pic-link{
 	display: inline-block;
 	position: relative;
 	width: 15%;
 	height:30%;
-	border: 1px solid white;
+
 	border-radius: 5px;
 	background-image: cover;
 	margin: 10px;
 	background-position:fixed;
 	text-align: center;
+  padding:10px;
 }
 
 .pic-link img {
