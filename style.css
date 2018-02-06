@@ -1,16 +1,15 @@
-body{
+body {
   width: 100vw;
 	display: inline-block;
   font-family: 'Montserrat', sans-serif !important;
 }
-.cont{
+.cont {
   width: 100vw;
   text-align: center;
   margin-left: 0px !important; 
   margin-right: 0px !important; 
   background-color: #BACCE2;
   position: static; 
-
 }
 .navbar-nav {
   width: 100vw;
@@ -28,52 +27,39 @@ a {
     color: #BACCE2;
     text-align: center;
 }
-.section{
+.section {
 	width: 100vw;
-	height: 500px;
+	height: 800px;
 	text-align: center;
-  background-color:white;
+  background-color:blue;
   border:1px solid black;
-  margin-bottom: ;
-  margin-top:100px;
   padding: 100px;
 }
-
-h2 {
-	margin-top: 0px !important;
-	margin-bottom: 0px !important;
-	border: 5px solid #808182;
-
+.name {
+	border: 1px solid #808182;
 }
-.top-bar{
-	padding-top: 100px;
-  width: 100vw; 
-	height:550px;
-  margin: 0px !important;
-  line-height: 0px ;
-
-
+.pic-bar {
+  border: 1px solid black;
 }
 .pic-link{
 	display: inline-block;
 	position: relative;
-	width: 15%;
+	width: 20%;
 	height:30%;
 	border-radius: 5px;
 	background-image: cover;
-	margin: 10px;
+	margin:0px;
 	background-position:fixed;
 	text-align: center;
-  padding:10px;
+  padding:5px;
 }
 
 .pic-link img {
   width: 100%;
-
 }
 .img__description {
   position: absolute;
-  line-height: 400px;
+  line-height: 300px;
   font-size: 24px;
   visibility: hidden;
   opacity: 1;
@@ -82,9 +68,7 @@ h2 {
   left: 0;
   right: 0;
   transition: opacity .5s;
-
 }
-
 .pic-link:hover .img__description {
   visibility: visible;
 }
@@ -104,3 +88,7 @@ h2 {
   background-color: #BACCE2;
   transition: visibility 0s 1s, opacity 1s linear;
 }
+
+
+
+/* responsive down heeyaahhh! */
