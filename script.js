@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $(window).scroll(function() {
     console.log($(window).scrollTop())
     if ($(window).scrollTop() > 400) {
@@ -11,12 +10,9 @@ $(document).ready(function() {
       $('.navbar').removeClass('fade-in');
       $('.navbar').addClass('fade-out');
     }
-  });
 
-  $(".nav-link").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#home #about #work #contact").offset().top},
-          'slow');
+
   });
+  
 });
 

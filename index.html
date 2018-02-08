@@ -15,7 +15,7 @@
   </head>
   <body>
   	<div class='cont'>
-	  	<div class="section">
+	  	<div class="section" id="home">
 			  <div class="top-bar">
 				<div class="pic-bar">
 					<div class="pic-link name-bar">
@@ -27,8 +27,8 @@
 						<a href="#about" class="img__description">About</a>
 					</div>
 					<div class="pic-link">
-						<a href="#work"><img class="" src="img/seattle-2.jpg" ></a>
-						<a href="#work" class="img__description">Work</a>
+						<a href="#projects"><img class="" src="img/seattle-2.jpg" ></a>
+						<a href="#projects" class="img__description">projects</a>
 					</div>
 					<div class="pic-link">
 						<a href="#contact"><img class="" src="img/seattle-3.jpg" ></a>
@@ -57,7 +57,7 @@
 					<ul class="nav navbar-nav" id="nav">
 			     		<li><a class='nav-link' href="#">Home</a></li>
 			      		<li><a class='nav-link' href="#about">About</a></li>
-			      		<li><a class='nav-link' href="#work">Work</a></li>
+			      		<li><a class='nav-link' href="#projects">Projects</a></li>
 			      		<li><a class='nav-link' href="#contact">Contact</a></li>
 			      		<li><a class='nav-link' href="#">Resume</a></li>
 			    	</ul>
@@ -65,11 +65,20 @@
 			</div>
 		</nav>
 		<div class='section' id="about">
-			<h2>about !</h2>
-			<p><i>Lets Create Together</i></p>	
+			<div class="about-content">
+				<div class="headshot">
+					<img class='headshot-img' src="img/headshot.jpg" alt="headshot">
+				</div>
+				<div class="brand-statement">
+					<p class="statement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae consectetur quasi odit alias in vitae numquam,
+						error molestiae exercitationem et quas eligendi illo iste ipsum repellat reprehenderit nobis voluptates rem blanditiis.
+						Perferendis maxime incidunt recusandae obcaecati! Ab optio in quidem dicta vel amet fuga praesentium tempore reprehenderit.
+						Magni, voluptatem?</p>
+				</div>
+			</div>
 		</div>
-		<div class='section' id="work">
-			<h2>my work !</h2>
+		<div class='section' id="projects">
+			<h2>my projects !</h2>
 			<p><i>Lets Create Together</i></p>	
 		</div>
 		<div class='section' id="contact">
@@ -77,10 +86,9 @@
 			<p><i>Lets Create Together</i></p>	
 		</div>
 
-		<footer id='footer'>
-				<div class="container-fluid">
-					Built By Phil Patterson 2018 </a>
-				</div>
+		<footer class='footer'>
+			<p class="foot">Built By Phil Patterson</p>
+			<p class="foot" id="right">2018</p>
 		</footer>
   	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,3 +1,6 @@
+/* ----------------------------------------------- */
+/* ------------------ Basic page layout ---------- */
+/* ----------------------------------------------- */
 body {
   width: 100vw;
 	display: inline-block;
@@ -12,6 +15,8 @@ body {
   background-color: #BACCE2;
   position: static; 
   border: 1px solid black;
+  color: white;
+  
 }
 .navbar-nav {
   width: 100vw;
@@ -22,41 +27,53 @@ a {
 	text-decoration: none !important;
 }
 .footer {
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    color: #BACCE2;
-    text-align: center;
+  position: static;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding: 25px;
+  color: black;
+  text-align: right;
+    
+}
+.foot{
+  display: inline-block;
+
 }
 .section {
-	width: 100vw;
+	width: 100%;
 	height: 800px;
 	text-align: center;
-  background-color:blue;
+  background-color:black;
   border:1px solid black;
-  padding: 100px;
   margin:0;
 }
-.top-bar {
+/* ----------------------------------------------- */
+/* ------------------ Home Page ------------------ */
+/* ----------------------------------------------- */
 
+#home{
+  height: 830px;
+}
+.top-bar {
+  width: 100%;
+  margin: 0;
 }
 
 .pic-bar {
   width: 100%;
-  margin: 0px;
+  height: 400px;
+  margin: 100px 0px 0px 0px;
   display: inline-block;  
 }
 
 .pic-link{
 	display: inline-block;
 	position: relative;
-	width: 15%;
-	height: 400px;
+	width: 17%;
+	height: 100%;
 	margin:0px;
 	text-align: center;
-
-
 }
 .name-bar {
   width: 30%;
@@ -64,34 +81,35 @@ a {
   padding: 10px;
   margin-top: 100px;
   vertical-align: top;
-
-  
 }
 .name,
 .job {
-  font-size: 1.5em;
+  font-size: 40px;
 }
 
 .pic-link img {
   width: 100%;
   height: 100%;
-  border-radius: 8%;
+  border-radius: 5%;
 
 }
 .img__description {
   position: absolute;
-  line-height: 300px;
-  font-size: 24px;
+  line-height: 400px;
+  font-size: 36px;
   opacity: 0;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   transition: opacity .5s;
+  
 }
 .pic-link:hover .img__description {
   opacity: 1;  
-  transition: opacity 1s; 
+  transition: opacity .5s; 
+  color: white;
+  
 }
 .pic-link:hover img{
   opacity: 0;
@@ -108,6 +126,62 @@ a {
   opacity: 0;
   background-color: #BACCE2;
   transition: visibility 0s 1s, opacity 1s linear;
+}
+
+
+/* ----------------------------------------------- */
+/* ------------------ About Page ----------------- */
+/* ----------------------------------------------- */
+
+#about {
+  background-color: grey;
+  width: 100%;
+  
+}
+.about-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  border: 1px solid black;
+  display: inline-block;
+}
+.headshot {
+  width: 200px;
+  height: 150px;
+	display: inline-block;
+
+  
+}
+.headshot img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  
+}
+.statement {
+  vertical-align: top;  
+  width: 60%;
+  height: 200px;
+  border: 1px solid black;
+	display: inline-block;
+	position: relative;
+}
+/* ----------------------------------------------- */
+/* ------------------ Projects Page -------------- */
+/* ----------------------------------------------- */
+#projects{
+  background-color: brown;
+}
+
+/* ----------------------------------------------- */
+/* ------------------ Contact Page --------------- */
+/* ----------------------------------------------- */
+
+#contact{
+  background-color: black;
+  height: 725px;
 }
 
 /* responsive down heeyaahhh! */
