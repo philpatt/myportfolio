@@ -5,11 +5,12 @@
 body {
   font: 100%/1.5 Arial;
   background:rgb(10,10,10) !important;
-  color:rgb(235,236,238) !important;
+  color:rgb(28, 38, 58) !important;
 }
 .jumbotron{
   margin-bottom:0 !important;
-  background:rgba(255,255,255,.9) !important;
+  height: 200px;
+  background:rgba(255,255,255,.6) !important;
 }
 .fluid_container{
   background:rgb(15,16,18);
@@ -46,6 +47,11 @@ body {
     transform: translateZ(-300px) scale(2);
     z-index: 3;
     height:100%;
+    background-image: url(img/seattle-rainier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
 }
 body, html {
     overflow: hidden;
@@ -56,6 +62,10 @@ body, html {
 #group1 {
     z-index: 3;
     height:70%;
+}
+.container {
+  background-color: black;
+  width: 100% !important;
 }
 .pic-bar{
 	border: 1px solid black;
