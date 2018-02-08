@@ -1,0 +1,13 @@
+** THINK MOBILE **
+   make a trello??
+ToDo:
+    - create readMe
+    - finish wire frame
+    - finish stubbing out whole page --> think mobile first
+    - re-adjust landing page for mobile first
+    - fix seattle img links (remove white from top)
+    - figure out rendering logic for projects in 'work' page --** make it scaleable **--
+    - color pallatte ( moods? )
+    - 
+
+
