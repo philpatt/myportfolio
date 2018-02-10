@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Phil Patterson</title>
+    <title>P1</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,24 +14,25 @@
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
+<!-- pic bar landing page -->
   	<div class='cont'>
 	  	<div class="section" id="home">
 			  <div class="top-bar">
 				<div class="pic-bar">
 					<div class="pic-link">
-						<a href="#about"><img class="" src="img/seattle-1.jpg" ></a>
+						<a href="#about"><img class="" src="img/seattle-pics/seattle-1.jpg" ></a>
 						<a href="#about" class="img__description">ABOUT</a>
 					</div>
 					<div class="pic-link">
-						<a href="#projects"><img class="" src="img/seattle-2.jpg" ></a>
+						<a href="#projects"><img class="" src="img/seattle-pics/seattle-2.jpg" ></a>
 						<a href="#projects" class="img__description">PROJECTS</a>
 					</div>
 					<div class="pic-link">
-						<a href="#contact"><img class="" src="img/seattle-3.jpg" ></a>
+						<a href="#contact"><img class="" src="img/seattle-pics/seattle-3.jpg" ></a>
 						<a href="#contact" class="img__description">CONTACT</a>
 					</div>
 					<div class="pic-link">
-						<a href="#"><img class="" img-fluid src="img/seattle-4.jpg" ></a>
+						<a href="#"><img class="" img-fluid src="img/seattle-pics/seattle-4.jpg" ></a>
 						<a href="#" class="img__description">RESUME</a>
 					</div>
 				</div>
@@ -41,7 +42,7 @@
 	  	</div>
 		<nav class="navbar hidden">
 			<div class="container">
-				<!-- mobile stuff -->
+		<!-- mobile stuff -->
 				<div class='navbar-default'>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 						<span class='sr-only'>Toggle navigation</span>
@@ -50,7 +51,7 @@
 						<span class='icon-bar'></span>
 					</button>
 				</div>
-				<!-- define links in navbar -->
+		<!-- define links in navbar -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav" id="nav">
 			     		<li><a class='nav-link' href="#">HOME</a></li>
@@ -62,8 +63,10 @@
 				</div>
 			</div>
 		</nav>
+<!-- about me section - headshot - branding statement -->
 		<div class='section' id="about">
-			<div class="about-content">
+			<h2 class="section-title">about me !</h2>			
+			<div class="section-content">
 				<div class="headshot">
 					<img class='headshot-img' src="img/headshot.jpg" alt="headshot">
 				</div>
@@ -75,15 +78,79 @@
 				</div>
 			</div>
 		</div>
+<!-- Projects section - screenshot of projects, live-link, github link  -->		
 		<div class='section' id="projects">
-			<h2>my projects !</h2>
-			<p><i>Lets Create Together</i></p>	
-		</div>
-		<div class='section' id="contact">
-			<h2>contact !</h2>
-			<p><i>Lets Create Together</i></p>	
-		</div>
+			<h2 class="section-title">my projects !</h2>
+			<div class="section-content proj-section">
+				<div class="viewer-cont">
+					<div class="project-image">
+						<img src="img/fill-murray.jpg" alt="">
+					</div>
+					<div class="skills">
 
+					</div>
+					
+				</div>
+				<div class="proj-cont">
+					<div class="project">
+						<h1 class="proj-title">Connect 4</h1>
+						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
+							porro!</p>
+						<div class='proj-links'>
+							<a href="#">
+								<img src="img/logos/GitHub-logo.png">
+							</a>
+							<a href="#">
+								<div class='demo'>live demo</div>
+							</a>
+						</div>
+
+					</div>
+					<div class="project">
+						<h1 class="proj-title">teddi</h1>
+						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
+							porro!
+						</p>
+						<a href="#">
+							<img src="img/logos/GitHub-logo.png">
+						</a>
+						<a href="#">
+							<div class='demo'>live demo</div>
+						</a>
+					</div>
+					<div class="project">
+						<h1 class="proj-title">Flashdash</h1>
+						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
+							porro!
+						</p>
+						<a href="#">
+							<img src="img/logos/GitHub-logo.png">
+						</a>
+						<a href="#">
+							<div class='demo'>live demo</div>
+						</a>
+					</div>
+					<div class="project">
+						<h1 class="proj-title">Project 4</h1>
+						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
+							porro!
+						</p>
+						<a href="#">
+							<img src="img/logos/GitHub-logo.png">
+						</a>
+						<a href="#">
+							<div class='demo'>live demo</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- contact section - link to gmail/linkedin/github/resume - (email form?)  -->		
+		<div class='section' id="contact">
+			<h2 class="section-title">contact me !</h2>			
+
+		</div>
+<!-- footer -->
 		<footer class='footer'>
 			<p class="foot">Built By Phil Patterson</p>
 			<p class="foot" id="right">2018</p>
