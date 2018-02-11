@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $(window).scroll(function() {
     console.log($(window).scrollTop())
     if ($(window).scrollTop() > 400) {
@@ -10,9 +11,20 @@ $(document).ready(function() {
       $('.navbar').removeClass('fade-in');
       $('.navbar').addClass('fade-out');
     }
-
-
   });
-  
 });
+
+function mouseEnter(pNum) {
+  var item = document.getElementById('p'+pNum);
+  item.style.visibility = 'visible';
+  console.log('visible',item)
+  
+}
+function mouseLeave(pNum) {
+  var item = document.getElementById('p'+pNum);
+  item.style.visibility = 'hidden';
+  console.log('hidden', item)
+  
+}
+
 

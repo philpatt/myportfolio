@@ -11,23 +11,27 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
 <!-- pic bar landing page -->
   	<div class='cont'>
 	  	<div class="section" id="home">
 			  <div class="top-bar">
+				  <div class="home-title">
+					<h1>Phil Patterson</h1>
+					<h3>Web Scholar</h3>
+				  </div>
 				<div class="pic-bar">
-					<div class="pic-link">
+					<div class="pic-link link1">
 						<a href="#about"><img class="" src="img/seattle-pics/seattle-1.jpg" ></a>
-						<a href="#about" class="img__description">ABOUT</a>
+						<a href="#about" class="img__description" ng-click="toTheTop()" du-scrollspy="About">ABOUT</a>
 					</div>
-					<div class="pic-link">
+					<div class="pic-link link2">
 						<a href="#projects"><img class="" src="img/seattle-pics/seattle-2.jpg" ></a>
 						<a href="#projects" class="img__description">PROJECTS</a>
 					</div>
-					<div class="pic-link">
+					<div class="pic-link link33">
 						<a href="#contact"><img class="" src="img/seattle-pics/seattle-3.jpg" ></a>
 						<a href="#contact" class="img__description">CONTACT</a>
 					</div>
@@ -83,16 +87,41 @@
 			<h2 class="section-title">my projects !</h2>
 			<div class="section-content proj-section">
 				<div class="viewer-cont">
-					<div class="project-image">
-						<img src="img/fill-murray.jpg" alt="">
+					<div class="p" id="p1">
+						<div class="project-image">
+							<img src="img/fill-murray.jpg" alt="">
+						</div>
+						<div class="skills">
+							here are the skill icons 1
+						</div>
 					</div>
-					<div class="skills">
-
+					<div class="p" id="p2">
+						<div class="project-image">
+							<img src="img/fill-murray.jpg" alt="">
+						</div>
+						<div class="skills">
+							here are the skill icons 2
+						</div>
 					</div>
-					
+					<div class="p" id="p3">
+						<div class="project-image">
+							<img src="img/fill-murray.jpg" alt="">
+						</div>
+						<div class="skills">
+							here are the skill icons 3
+						</div>
+					</div>
+					<div class="p" id="p4">
+						<div class="project-image">
+							<img src="img/fill-murray.jpg" alt="">
+						</div>
+						<div class="skills">
+							here are the skill icons 4
+						</div>
+					</div>
 				</div>
-				<div class="proj-cont">
-					<div class="project">
+				<div class="proj-cont" >
+					<div class="project" onmouseenter="mouseEnter(1)" onmouseleave="mouseLeave(1)">
 						<h1 class="proj-title">Connect 4</h1>
 						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
 							porro!</p>
@@ -101,12 +130,12 @@
 								<img src="img/logos/GitHub-logo.png">
 							</a>
 							<a href="#">
-								<div class='demo'>live demo</div>
+								<div class='demo'>demo</div>
 							</a>
 						</div>
 
 					</div>
-					<div class="project">
+					<div class="project" onmouseenter="mouseEnter(2)" onmouseleave="mouseLeave(2)">
 						<h1 class="proj-title">teddi</h1>
 						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
 							porro!
@@ -115,10 +144,10 @@
 							<img src="img/logos/GitHub-logo.png">
 						</a>
 						<a href="#">
-							<div class='demo'>live demo</div>
+							<div class='demo'>demo</div>
 						</a>
 					</div>
-					<div class="project">
+					<div class="project" onmouseenter="mouseEnter(3)" onmouseleave="mouseLeave(3)">
 						<h1 class="proj-title">Flashdash</h1>
 						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
 							porro!
@@ -127,10 +156,10 @@
 							<img src="img/logos/GitHub-logo.png">
 						</a>
 						<a href="#">
-							<div class='demo'>live demo</div>
+							<div class='demo'>demo</div>
 						</a>
 					</div>
-					<div class="project">
+					<div class="project" onmouseenter="mouseEnter(4)" onmouseleave="mouseLeave(4)">
 						<h1 class="proj-title">Project 4</h1>
 						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
 							porro!
@@ -139,7 +168,7 @@
 							<img src="img/logos/GitHub-logo.png">
 						</a>
 						<a href="#">
-							<div class='demo'>live demo</div>
+							<div class='demo'>demo</div>
 						</a>
 					</div>
 				</div>
@@ -155,14 +184,12 @@
 			<p class="foot">Built By Phil Patterson</p>
 			<p class="foot" id="right">2018</p>
 		</footer>
-  	</div>
+	  </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src='script.js'></script>
-
-
   </body>
 </html>
 
