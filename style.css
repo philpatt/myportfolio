@@ -2,31 +2,28 @@
 /* ------------------ Basic page layout ---------- */
 /* ----------------------------------------------- */
 html{
-  width: 100vw;
+  width: 100%;
+  background-color: rgb(119,136,153);  
   font-family: 'Montserrat', sans-serif !important;  
 }
 body {
   width: 100vw;
-	/* display: inline-block; */
   font-family: 'Montserrat', sans-serif !important;
   margin:0;
+  background-color: rgb(119,136,153);  
+  
 }
 .cont {
   width: 100%;
-  /* text-align: center; */
   margin-left: 0px !important; 
   margin-right: 0px !important; 
-  /* background-color: #BACCE2; */
   position: static; 
-  border: 1px solid black;
   color: white;
-  background-color: rgb(152,152,152);
+  background-color: rgb(119,136,153);  
+  
 }
 nav {
 background-color:transparent !important;
-}
-.nav-link {
-
 }
 a {
   text-decoration: none !important;
@@ -35,9 +32,8 @@ a {
 
 .footer {
   position: static;
-  background: linear-gradient(to bottom, #989898 0%, #000000 100%);  
   width: 100%;
-  height: 70px;
+  height: 100px;
   text-align: center;
   padding: 25px;
   color: black;
@@ -50,14 +46,16 @@ a {
 	width: 100%;
 	height: 800px;
 	text-align: center;
-  background-color: rgb(152,152,152);
   margin:0;
+  background-color: rgb(119,136,153);    
 }
 .section-content {
   width: 100%;
-  margin: 0;
-  height: 500px;
-  border: 1px solid black;
+  margin: 25px 0px 0px 0px;
+  height: 650px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  background-color: rgb(175,175,175);
   padding: 100px 0;
   
 }
@@ -66,26 +64,28 @@ a {
 /* ----------------------------------------------- */
 
 #home{
-  height: 830px;
+  /* height: 830px; */
 }
 .top-bar {
   width: 100%;
-  margin: 0;
 }
 .home-title {
+  text-align: center;
   width: 100%;
   height: 100px;
-  margin: 75px 0px 0px 0px;
+  margin: 25px 0px 25px 0px;
+  padding: 0 !important;
 }
 .pic-bar {
-  width: 100%;
   height: 500px;
   margin: 50px 0px 0px 0px;
+	display: inline-block;  
+  vertical-align: top;
 }
 .pic-link{
 	display: inline-block;
 	position: relative;
-	width: 20%;
+	width: 15%;
 	height: 100%;
 	margin:0px 10px;
   text-align: center;
@@ -96,7 +96,6 @@ a {
   padding: 10px;
   margin-top: 100px;
   display: block;
-
 }
 .name,
 .job {
@@ -110,7 +109,7 @@ a {
 .img__description {
   position: absolute;
   line-height: 400px;
-  font-size: 36px;
+  font-size: 2vw;
   opacity: 0;
   top: 0;
   bottom: 0;
@@ -146,86 +145,90 @@ a {
 #about {
   padding: 50px 0;
 }
-
-.headshot {
-  width: 200px;
-  height: 150px;
-  display: inline-block;
-  margin: 0px 50px 50px 50px;
-}
 .headshot img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 3px solid rgb(152,152,152);
   box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
 }
 .brand-statement {
-  vertical-align: top;  
-  width: 60%;
-  height: 200px;
-  border: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
+  padding: 30px;
+  text-align: left;
+  height: 100%;
+  border: 3px solid rgb(152,152,152);
 }
 /* ----------------------------------------------- */
 /* ------------------ Projects Page -------------- */
 /* ----------------------------------------------- */
 #projects {
-  width: 100%;
-  height: 80%;
-  border: 1px solid black;
   padding: 50px 0;
 }
-.proj-section {
-  height: 100%;
-  width: 100%;
-  margin: 0 0 50px 0;
-  padding: 0 !important;
+.proj-content {
+  padding: 50px !important;
 }
+/* left-side container  */
 .viewer-cont {
-  height: 600px;
+  height: 100%;
   width: 40%;
-  border: 1px solid black;
   display: inline-block;
   vertical-align: top;
-  padding: 20px;
+  padding: 30px;
+  border: 3px solid white;
 }
-.p{
-  position: absolute;
-  width: 35%;
+/* project-snapshot section */
+.p {
+  width: 100%;
+  height: 60%;
   visibility: hidden;
 }
 .project-image {
   width: 100%;
-  height: 60%;
-  border: 1px solid black;
-}
-.skills {
-  height: 30%;
+  height: 100%;
+  border: 3px solid white;
 }
 .project-image img {
   width: 100%;
   height: 100%;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, .5);
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+/* tech-icon section */
+.skills {
+  width: 100%;
+  height: 30%;
+  /* border: 3px solid white; */
+  margin: 40px 0px 0px 0px;
+}
+.skill {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.skill img {
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 5px 10px 15px rgba(0, 0, 0, .5);
+  transition: box-shadow 0.3s ease-in-out; */
+}
+
+/* right-side container  */
 .proj-cont {
   vertical-align: top;  
-  height: 600px;
+  height: 550px;
   width: 50%;
   display: inline-block;
-  /* margin: 0px 0px 0px 60px; */
-  border: 1px solid black;  
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .project {
   height: 240px;
   width: 40%;
   padding: 5px 5px 20px 5px;
-  border: 1px solid black;  
+  border: 3px solid white;  
   display: inline-block;
   margin: 5px; 
   vertical-align: top;
-  /* overflow: auto; */
 }
 .project:hover{
   box-shadow: 5px 10px 15px rgba(0, 0, 0, .5);
@@ -259,15 +262,15 @@ a {
   vertical-align: top;    
 }
 
-/* use onMouseEnter(jquery) command for auto populating projects */
+
 
 /* ----------------------------------------------- */
 /* ------------------ Contact Page --------------- */
 /* ----------------------------------------------- */
 
 #contact{
-  /* background-color: black; */
-  height: 725px;
+  padding: 50px 0;
+  
 }
 
 /* responsive down heeyaahhh! */

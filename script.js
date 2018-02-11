@@ -14,17 +14,24 @@ $(document).ready(function() {
   });
 });
 
-function mouseEnter(pNum) {
-  var item = document.getElementById('p'+pNum);
-  item.style.visibility = 'visible';
-  console.log('visible',item)
-  
+function mouseEnter(pNum,skillA,skillB,skillC,skillD) {
+  console.log(pNum,skillA,skillB,skillC,skillD);
+  var projImg = document.getElementById('image');
+  var skill = document.getElementById('skill');
+  var proj = document.getElementById('p');
+  console.log(skillA);
+  projImg.src ="img/projects/proj"+pNum+".jpg";
+  proj.style.visibility = 'visible';
+  skillA.style.backgroundColor = 'yellow';
 }
+
 function mouseLeave(pNum) {
-  var item = document.getElementById('p'+pNum);
-  item.style.visibility = 'hidden';
-  console.log('hidden', item)
-  
+  var projImg = document.getElementById('image');
+  var proj = document.getElementById('p');
+  projImg.src = "";
+  proj.style.visibility = 'hidden';  
+  // projImg.src = "img/projects/proj" + pNum + ".png";
+
 }
 
 

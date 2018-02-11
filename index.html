@@ -18,30 +18,34 @@
   	<div class='cont'>
 	  	<div class="section" id="home">
 			  <div class="top-bar">
-				  <div class="home-title">
-					<h1>Phil Patterson</h1>
-					<h3>Web Scholar</h3>
+				<div class="home-title col-xs-3"></div>
+				  <div class="home-title col-xs-6">
+					<h2>Phil Patterson</h2>
+					<h4>Web Scholar</h4>
+					<hr>
 				  </div>
+				<div class="home-title col-xs-3"></div>				  
 				<div class="pic-bar">
 					<div class="pic-link link1">
-						<a href="#about"><img class="" src="img/seattle-pics/seattle-1.jpg" ></a>
-						<a href="#about" class="img__description" ng-click="toTheTop()" du-scrollspy="About">ABOUT</a>
+						<a href="#about"><img class="" src="img/ski-pics/ski-1.jpg" ></a>
+						<a href="#about" class="img__description">ABOUT</a>
 					</div>
 					<div class="pic-link link2">
-						<a href="#projects"><img class="" src="img/seattle-pics/seattle-2.jpg" ></a>
+						<a href="#projects"><img class="" src="img/ski-pics/ski-2.jpg" ></a>
 						<a href="#projects" class="img__description">PROJECTS</a>
 					</div>
-					<div class="pic-link link33">
-						<a href="#contact"><img class="" src="img/seattle-pics/seattle-3.jpg" ></a>
+					<div class="pic-link link3">
+						<a href="#contact"><img class="" src="img/ski-pics/ski-3.jpg" ></a>
 						<a href="#contact" class="img__description">CONTACT</a>
 					</div>
 					<div class="pic-link">
-						<a href="#"><img class="" img-fluid src="img/seattle-pics/seattle-4.jpg" ></a>
+						<a href="#"><img src="img/ski-pics/ski-4.jpg" ></a>
 						<a href="#" class="img__description">RESUME</a>
 					</div>
+					<br>
+					<br>
+					<p>hover to explore</p>
 				</div>
-				<br>
-				<p>hover to explore</p>
 			</div>
 	  	</div>
 		<nav class="navbar hidden">
@@ -69,59 +73,54 @@
 		</nav>
 <!-- about me section - headshot - branding statement -->
 		<div class='section' id="about">
-			<h2 class="section-title">about me !</h2>			
-			<div class="section-content">
-				<div class="headshot">
-					<img class='headshot-img' src="img/headshot.jpg" alt="headshot">
+			<div class="section-content">			
+				<div class="row">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-6">
+						<h2>about me</h2>
+						<hr>
+						<br>						
+					</div>
+					<div class="col-xs-3"></div>
 				</div>
-				<div class="brand-statement">
-					<p class="statement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae consectetur quasi odit alias in vitae numquam,
-						error molestiae exercitationem et quas eligendi illo iste ipsum repellat reprehenderit nobis voluptates rem blanditiis.
-						Perferendis maxime incidunt recusandae obcaecati! Ab optio in quidem dicta vel amet fuga praesentium tempore reprehenderit.
-						Magni, voluptatem?</p>
+				<div class="row">
+					<div class="col-xs-2"></div>				
+					<div class="headshot col-xs-3">
+						<img class='headshot-img' src="img/headshot.jpg" alt="headshot">
+					</div>
+					<div class="brand-statement col-xs-5">
+						<p class="statement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae consectetur quasi odit alias in vitae numquam,
+							error molestiae exercitationem et quas eligendi illo iste ipsum repellat reprehenderit nobis voluptates rem blanditiis.
+							Perferendis maxime incidunt recusandae obcaecati! Ab optio in quidem dicta vel amet fuga praesentium tempore reprehenderit.
+							Magni, voluptatem?</p>
+					</div>
+					<div class="col-xs-2"></div>
 				</div>
 			</div>
 		</div>
 <!-- Projects section - screenshot of projects, live-link, github link  -->		
 		<div class='section' id="projects">
-			<h2 class="section-title">my projects !</h2>
-			<div class="section-content proj-section">
+			<div class="section-content proj-content">
 				<div class="viewer-cont">
-					<div class="p" id="p1">
+					<div class="p" id="p">
 						<div class="project-image">
-							<img src="img/fill-murray.jpg" alt="">
+							<img id='image' src="" alt="">
 						</div>
-						<div class="skills">
-							here are the skill icons 1
+					</div>	
+					<div class="skills">
+						<div class="skill">
+							<img id=' skill1' src="img/lang-logos/html.png" alt="">
 						</div>
-					</div>
-					<div class="p" id="p2">
-						<div class="project-image">
-							<img src="img/fill-murray.jpg" alt="">
+						<div class="skill">
+							<img id='skill2' src="img/lang-logos/css3.png" alt="">
 						</div>
-						<div class="skills">
-							here are the skill icons 2
-						</div>
-					</div>
-					<div class="p" id="p3">
-						<div class="project-image">
-							<img src="img/fill-murray.jpg" alt="">
-						</div>
-						<div class="skills">
-							here are the skill icons 3
-						</div>
-					</div>
-					<div class="p" id="p4">
-						<div class="project-image">
-							<img src="img/fill-murray.jpg" alt="">
-						</div>
-						<div class="skills">
-							here are the skill icons 4
+						<div class="skill">
+							<img id='skill3' src="img/lang-logos/js.png" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="proj-cont" >
-					<div class="project" onmouseenter="mouseEnter(1)" onmouseleave="mouseLeave(1)">
+					<div class="project" onmouseenter="mouseEnter(1, skill1, skill2)" onmouseleave="mouseLeave(1)">
 						<h1 class="proj-title">Connect 4</h1>
 						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
 							porro!</p>
@@ -133,7 +132,6 @@
 								<div class='demo'>demo</div>
 							</a>
 						</div>
-
 					</div>
 					<div class="project" onmouseenter="mouseEnter(2)" onmouseleave="mouseLeave(2)">
 						<h1 class="proj-title">teddi</h1>
@@ -176,14 +174,15 @@
 		</div>
 <!-- contact section - link to gmail/linkedin/github/resume - (email form?)  -->		
 		<div class='section' id="contact">
-			<h2 class="section-title">contact me !</h2>			
-
+			<div class="section-content">
+				<h2 class="section-title">contact me !</h2>
+			</div>
+	<!-- footer -->
+			<footer class='footer'>
+				<p class="foot">Built By Phil Patterson</p>
+				<p class="foot" id="right">2018</p>
+			</footer>
 		</div>
-<!-- footer -->
-		<footer class='footer'>
-			<p class="foot">Built By Phil Patterson</p>
-			<p class="foot" id="right">2018</p>
-		</footer>
 	  </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
