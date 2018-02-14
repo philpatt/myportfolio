@@ -5,8 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -17,14 +16,12 @@
 <!-- pic bar landing page -->
   	<div class='cont'>
 	  	<div class="section" id="home">
-			  <div class="top-bar">
-				<div class="home-title col-xs-3"></div>
-				  <div class="home-title col-xs-6">
+			<div class="top-bar">
+				<div class="home-title">
 					<h2>Phil Patterson</h2>
-					<h4>Web Scholar</h4>
+					<h4>Web Developer</h4>
 					<hr>
-				  </div>
-				<div class="home-title col-xs-3"></div>				  
+				</div>
 				<div class="pic-bar">
 					<div class="pic-link link1">
 						<a href="#about"><img class="" src="img/ski-pics/ski-1.jpg" ></a>
@@ -43,7 +40,7 @@
 						<a href="#" class="img__description">RESUME</a>
 					</div>
 					<br>
-					<br>
+					<br>					
 					<p>hover to explore</p>
 				</div>
 			</div>
@@ -62,7 +59,7 @@
 		<!-- define links in navbar -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav" id="nav">
-			     		<li><a class='nav-link' href="#">HOME</a></li>
+			     		<li><a href="#" class='nav-link' >HOME</a></li>
 			      		<li><a class='nav-link' href="#about">ABOUT</a></li>
 			      		<li><a class='nav-link' href="#projects">PROJECTS</a></li>
 			      		<li><a class='nav-link' href="#contact">CONTACT</a></li>
@@ -75,26 +72,21 @@
 		<div class='section' id="about">
 			<div class="section-content">			
 				<div class="row">
-					<div class="col-xs-3"></div>
-					<div class="col-xs-6">
+					<div class="col-xs-6 col-sm-6">
 						<h2>about me</h2>
-						<hr>
-						<br>						
+						<hr>					
 					</div>
-					<div class="col-xs-3"></div>
 				</div>
-				<div class="row">
-					<div class="col-xs-2"></div>				
-					<div class="headshot col-xs-3">
+				<div class="row content">
+					<div class="headshot col-xs-10 col-sm-4">
 						<img class='headshot-img' src="img/headshot.jpg" alt="headshot">
 					</div>
-					<div class="brand-statement col-xs-5">
+					<div class="brand-statement col-xs-10 col-sm-7">
 						<p class="statement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae consectetur quasi odit alias in vitae numquam,
 							error molestiae exercitationem et quas eligendi illo iste ipsum repellat reprehenderit nobis voluptates rem blanditiis.
 							Perferendis maxime incidunt recusandae obcaecati! Ab optio in quidem dicta vel amet fuga praesentium tempore reprehenderit.
 							Magni, voluptatem?</p>
 					</div>
-					<div class="col-xs-2"></div>
 				</div>
 			</div>
 		</div>
@@ -106,21 +98,41 @@
 						<div class="project-image">
 							<img id='image' src="" alt="">
 						</div>
+						<!-- <div class="project-image">
+							<img id="idle-image" src="img/lang-logos/reactjs.png" alt="">
+						</div> -->
 					</div>	
 					<div class="skills">
 						<div class="skill">
-							<img id=' skill1' src="img/lang-logos/html.png" alt="">
+							<img id='html' src="img/lang-logos/html.png" alt="">
 						</div>
 						<div class="skill">
-							<img id='skill2' src="img/lang-logos/css3.png" alt="">
+							<img id='css' src="img/lang-logos/css3.png" alt="">
 						</div>
 						<div class="skill">
-							<img id='skill3' src="img/lang-logos/js.png" alt="">
+							<img id='js' src="img/lang-logos/js.png" alt="">
+						</div>
+						<div class="skill">
+							<img id='reactjs' src="img/lang-logos/reactjs.png" alt="">
+						</div>
+						<div class="skill">
+							<img id='nodejs' src="img/lang-logos/nodejs.png" alt="">
+						</div>
+						<div class="skill">
+							<img id='postgres' src="img/lang-logos/postgres.png" alt="">
+						</div>
+						<div class="skill">
+							<img id='mongo' src="img/lang-logos/mongo.png" alt="">
+						</div>
+						<div class="skill">
+							<img id='python' src="img/lang-logos/python.png" alt="">
+						</div><div class="skill">
+							<img id='django' src="img/lang-logos/django.png" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="proj-cont" >
-					<div class="project" onmouseenter="mouseEnter(1, skill1, skill2)" onmouseleave="mouseLeave(1)">
+					<div class="project" onmouseenter="mouseEnter(1, html, css, js)" onmouseleave="mouseLeave(1, html, css, js)">
 						<h1 class="proj-title">Connect 4</h1>
 						<p class="proj-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni ipsum unde fugit autem eligendi quam ea laborum optio
 							porro!</p>
@@ -174,15 +186,48 @@
 		</div>
 <!-- contact section - link to gmail/linkedin/github/resume - (email form?)  -->		
 		<div class='section' id="contact">
-			<div class="section-content">
-				<h2 class="section-title">contact me !</h2>
-			</div>
+			<div class="section-content contact">
+				<h2 class="section-title contact-title">contact me !</h2>
+				<hr>
+				<div class="row">
+					<div class="email">
+						<h2>
+							<a href="mailto:phillip.s.patterson1@gmail.com">phillip.s.patterson1@gmail.com</a>
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="contact-cont">
+						<div class="contact-link">
+							<a href="#">
+								<img src="img/logos/linkedin-logo.png">
+							</a>
+						</div>
+						<h2 class="contact-link-title">LinkedIn</h2>
+					</div>						
+					<div class="contact-cont">
+						<div class="contact-link">
+							<a href="#">
+								<img src="img/logos/GitHub-logo.png">
+							</a>
+						</div>		
+					<h2 class="contact-link-title">GitHub</h2>
+					</div>
+					<div class="contact-cont">
+						<div class="contact-link">
+							<a href="#">
+								<img src="img/logos/resume-logo.png">
+							</a>
+						</div>						
+							<h2 class="contact-link-title">Resume</h2>	
+					</div>
+				</div>
 	<!-- footer -->
-			<footer class='footer'>
-				<p class="foot">Built By Phil Patterson</p>
-				<p class="foot" id="right">2018</p>
-			</footer>
 		</div>
+		<footer class='footer'>
+			<p class="foot">Built By Phil Patterson</p>
+			<p class="foot" id="right">2018</p>
+		</footer>
 	  </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
