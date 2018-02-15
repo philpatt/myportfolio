@@ -16,35 +16,38 @@
 <!-- pic bar landing page -->
   	<div class='cont'>
 	  	<div class="section" id="home">
-			<div class="top-bar">
-				<div class="home-title">
-					<h2>Phil Patterson</h2>
-					<h4>Web Developer</h4>
-					<hr>
-				</div>
-				<div class="pic-bar">
-					<div class="pic-link link1">
-						<a href="#about"><img class="" src="img/ski-pics/ski-1.jpg" ></a>
-						<a href="#about" class="img__description">ABOUT</a>
-					</div>
-					<div class="pic-link link2">
-						<a href="#projects"><img class="" src="img/ski-pics/ski-2.jpg" ></a>
-						<a href="#projects" class="img__description">PROJECTS</a>
-					</div>
-					<div class="pic-link link3">
-						<a href="#contact"><img class="" src="img/ski-pics/ski-3.jpg" ></a>
-						<a href="#contact" class="img__description">CONTACT</a>
-					</div>
-					<div class="pic-link">
-						<a href="#"><img src="img/ski-pics/ski-4.jpg" ></a>
-						<a href="#" class="img__description">RESUME</a>
-					</div>
-					<br>
-					<br>					
-					<p>hover to explore</p>
+			<div class="row home-title">
+				<h2>Phil Patterson</h2>
+				<hr>				
+				<h4>Web Developer</h4>
+				<div class="col-xs-offset-4 col-xs-4 down-arrow">
+						<a href="#about">
+							<img class='img-responsive'src="img/logos/arrow-down-white.png" alt="">
+						</a>
 				</div>
 			</div>
-	  	</div>
+			<div class="row section-content pic-bar">
+				<div class="pic-link link1">
+					<a href="#about"><img class="" src="img/ski-pics/ski-1.jpg" ></a>
+					<a href="#about" class="img__description">ABOUT</a>
+				</div>
+				<div class="pic-link link2">
+					<a href="#projects"><img class="" src="img/ski-pics/ski-2.jpg" ></a>
+					<a href="#projects" class="img__description">PROJECTS</a>
+				</div>
+				<div class="pic-link link3">
+					<a href="#contact"><img class="" src="img/ski-pics/ski-3.jpg" ></a>
+					<a href="#contact" class="img__description">CONTACT</a>
+				</div>
+				<div class="pic-link">
+					<a href="#"><img src="img/ski-pics/ski-4.jpg" ></a>
+					<a href="Resume_Patterson.pdf" target='blank' class="img__description">RESUME</a>
+				</div>			
+				<br>
+				<br>					
+				<p><i>( Mount Mansfield, Vermont )</i></p>	
+			</div>
+		</div>
 		<nav class="navbar hidden">
 			<div class="container">
 		<!-- mobile stuff -->
@@ -63,29 +66,29 @@
 			      		<li><a class='nav-link' href="#about">ABOUT</a></li>
 			      		<li><a class='nav-link' href="#projects">PROJECTS</a></li>
 			      		<li><a class='nav-link' href="#contact">CONTACT</a></li>
-			      		<li><a class='nav-link' href="#">RESUME</a></li>
+			      		<li><a class='nav-link' href="img/Resume_Patterson.pdf" target="blank">RESUME</a></li>
 			    	</ul>
 				</div>
 			</div>
 		</nav>
 <!-- about me section - headshot - branding statement -->
 		<div class='section' id="about">
-			<div class="section-content">			
+			<div class="section-content about">			
 				<div class="row">
-					<div class="col-xs-6 col-sm-6">
+					<div class="col-xs-offset-3 col-xs-6">
 						<h2>about me</h2>
 						<hr>					
 					</div>
 				</div>
 				<div class="row content">
-					<div class="headshot col-xs-10 col-sm-4">
+					<div class="headshot col-md-offset-1 col-md-3 ">
 						<img class='headshot-img' src="img/headshot.jpg" alt="headshot">
 					</div>
-					<div class="brand-statement col-xs-10 col-sm-7">
+					<div class="brand-statement col-xs-10 col-xs-offset-1 col-md-offset-2 col-md-5 col-lg-offset-1">
 						<p class="statement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae consectetur quasi odit alias in vitae numquam,
-							error molestiae exercitationem et quas eligendi illo iste ipsum repellat reprehenderit nobis voluptates rem blanditiis.
-							Perferendis maxime incidunt recusandae obcaecati! Ab optio in quidem dicta vel amet fuga praesentium tempore reprehenderit.
-							Magni, voluptatem?</p>
+						error molestiae exercitationem et quas eligendi illo iste ipsum repellat reprehenderit nobis voluptates rem blanditiis.
+						Perferendis maxime incidunt recusandae obcaecati! Ab optio in quidem dicta vel amet fuga praesentium tempore reprehenderit.
+						Magni, voluptatem?</p>
 					</div>
 				</div>
 			</div>
@@ -185,10 +188,14 @@
 			</div>
 		</div>
 <!-- contact section - link to gmail/linkedin/github/resume - (email form?)  -->		
-		<div class='section' id="contact">
+		<div class='section ' id="contact">
 			<div class="section-content contact">
-				<h2 class="section-title contact-title">contact me !</h2>
-				<hr>
+				<div class="row">
+					<div class="col-xs-offset-3 col-xs-6">
+						<h2>contact me</h2>
+						<hr>
+					</div>
+				</div>
 				<div class="row">
 					<div class="email">
 						<h2>
@@ -198,7 +205,7 @@
 				</div>
 				<div class="row">
 					<div class="contact-cont">
-						<div class="contact-link">
+						<div class="contact-link linkedin">
 							<a href="#">
 								<img src="img/logos/linkedin-logo.png">
 							</a>
@@ -214,8 +221,8 @@
 					<h2 class="contact-link-title">GitHub</h2>
 					</div>
 					<div class="contact-cont">
-						<div class="contact-link">
-							<a href="#">
+						<div class="contact-link resume">
+							<a href="img/Resume_Patterson.pdf" target='blank'>
 								<img src="img/logos/resume-logo.png">
 							</a>
 						</div>						
