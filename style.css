@@ -8,8 +8,7 @@
 } */
 html,
 body {
-  margin: 10 !important;  
-  padding: 10 !important;  
+
   font-family: 'Montserrat', sans-serif !important;
   background-color: rgb(119,136,153);  
   
@@ -334,7 +333,7 @@ a {
 
 
 /*--------- med responsive ----------- */
-@media (max-width: 7689px) {
+@media (max-width: 768px) {
   /* general layout */
   .section-content{
     padding: 0px;
