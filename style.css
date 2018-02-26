@@ -55,6 +55,8 @@ list-style: none;
   border: 3px solid white;
   background-color: rgb(175,175,175);
   position: relative;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
+  
 }
 /* ----------------------------------------------- */
 /* ------------------ Home Page ------------------ */
@@ -348,6 +350,10 @@ list-style: none;
 /*--------- med responsive ----------- */
 @media (max-width: 768px) {
   /* general layout */
+  section {
+    padding: 0 !important;  
+    
+  }
   .section-content{
     padding: 0px;
     background-color: red;
@@ -425,7 +431,10 @@ list-style: none;
     border: none;
     box-shadow: none;
   }
+  .proj-cont {
+    padding: 0px 0px 10px 0px !important;
 
+}
   .proj-title {
     margin: 10px 0;
     font-size: 6vw;
@@ -437,14 +446,14 @@ list-style: none;
   .project {
     margin-top: 30px;
     height: auto;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
+    
   }
-  /* .proj-content {
-    visibility: hidden;
+/* footer */
+  .footer {
+    margin: 10px;
+    padding: 10px !important; 
   }
-  .sm-proj-content {
-    visibility: visible;
-  } */
-  /* Contact Page */
 
 } /* end of the media query*/
 
