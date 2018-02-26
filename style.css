@@ -79,7 +79,7 @@ list-style: none;
   height: 550px;
 	display: inline-block;  
   vertical-align: top;
-  visibility: visible;
+  /* visibility: visible; */
 }
 .pic-link {
 	display: inline-block;
