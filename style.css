@@ -47,9 +47,10 @@ section {
 .footer li{
 list-style: none;
 }
-.footer-line {
-  margin:0;
-}
+.bottom{
+    bottom: 0;
+    right: 0;
+  }
 .section-content {
   width: 100%;
   margin: 25px 0px 0px 0px !important;
@@ -378,7 +379,7 @@ list-style: none;
     padding: 30px;
     margin-top: 8%;
     text-align: left;
-    font-size: 12px;    
+    font-size: 16px;    
     border: 3px solid #fff;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
   }
@@ -421,6 +422,7 @@ list-style: none;
     margin: 10px;
     padding: 10px !important; 
   }
+
 
 } /* end of the media query*/
 
