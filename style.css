@@ -140,25 +140,53 @@ list-style: none;
 
 #about {
   padding: 50px 0;
+  text-align:left;
+  height: auto;
 }
 .headshot img {
   width: 300px;
   height: auto;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   /* border-radius: 10%; */
   border: 3px solid #fff;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
 }
 .brand-statement {  
-  width: 80%;
+  margin: 10px;
   padding: 30px;
-  margin-top: 8%;
   text-align: left;
   height: auto;
   border: 3px solid #fff;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
-  
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .5);  
 }
+.contact {
+  margin: 20px;
+  height: auto;
+  padding: 0px;
+  width: 100px;
+  display: inline-block;
+}
+.contact img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, .5);
+  transition: opacity .5s;
+}
+.contact_description {
+  opacity: 0;
+  transition: opacity .5s;
+}
+.contact:hover img{
+  opacity: 0;
+  transition: opacity .5s;
+}
+.contact:hover .contact_description{
+  opacity: 1;  
+  transition: opacity .5s;
+}
+
+
 /* ----------------------------------------------- */
 /* ------------------ Projects Page -------------- */
 /* ----------------------------------------------- */
@@ -279,68 +307,8 @@ list-style: none;
 /* ------------------ Contact Page --------------- */
 /* ----------------------------------------------- */
 
-#contact{
-  height:700;
-}
-.contact {
-  padding: 50px 0;
-  height: 650px !important;
-  width: 100%;
-}
-.contact-cont {
-  width: 150px;  
-  height: 150px;
-  display: inline-block;
-  margin: 50px;
-  transition: width .3s;
-}
-.contact-link-title{
-  visibility: hidden;
-  font-size: 18px;
-}
-.contact-link {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-}
-.contact-link img {
-  width: 100%;
-  height: 100%; 
-  border: 10px solid black;
-  border-radius: 50%;
-  transition: box-shadow linear;
-}
-.linkedin img {
-  border: 3px solid black; 
-  border-radius: 30%;
-}
-.resume img {
-  border: 5px solid black;  
-  /* border-radius: 5%; */
-  padding: 0 !important!
-}
-.contact-cont:hover{
-  width: 200px;
-  height: 200px; 
-  transition: width .3s;
-}
-.contact-link img:hover {
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, .5);
-}
-.email {
-  width: 100%; 
-  transition: width .3s;
-   
-}
-.email a {
-  font-size: 24px;
-  transition: font-size .3s;
-  
-}
-.email a:hover {
-  font-size: 36px;
-  transition: font-size .3s;
-}
+
+
 /* --------------------------------------------------------------- */
 /* ------------------ responsive down heeyaahhh! ----------------- */
 /* --------------------------------------------------------------- */
@@ -396,9 +364,9 @@ list-style: none;
     /* margin-top: 100px; */
   }
   .brand-statement {
-    margin: 10px;
+    /* margin-right: 0px !important;
     font-size: 12px;
-    /* border: 3px solid #fff; */
+    padding: 0 !important; */
   }
   .headshot {
   padding: 0 !important;
@@ -411,13 +379,17 @@ list-style: none;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
   }
   .brand-statement {  
-    width: 80%;
     height: auto;
     padding: 30px;
     margin-top: 8%;
     text-align: left;
+    font-size: 12px;    
     border: 3px solid #fff;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
+  }
+  .contact img {
+  height: 75%;
+  width: 75%;
   }
 
   /* Project Page */
