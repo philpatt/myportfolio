@@ -229,7 +229,7 @@ list-style: none;
 }
 .project {
   text-align: left;
-  height: auto;
+  height: 400px;
   border: 3px solid white;  
   display: inline-block;
   vertical-align: top;
@@ -329,7 +329,6 @@ list-style: none;
   }
   .section-content{
     padding: 0px;
-    background-color: red;
   }
   /* home layout */
   .pic-bar {
@@ -365,21 +364,12 @@ list-style: none;
   .about {
     height: auto
   }
-  .content {
-    /* margin-top: 100px; */
-  }
-  .brand-statement {
-    /* margin-right: 0px !important;
-    font-size: 12px;
-    padding: 0 !important; */
-  }
   .headshot {
   padding: 0 !important;
     
   }
   .headshot img {
     margin-top: 0px;
-    /* border-radius: 10%; */
     border: 3px solid #fff;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
   }
@@ -393,8 +383,8 @@ list-style: none;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, .5); 
   }
   .contact img {
-  height: 75%;
-  width: 75%;
+    height: 75%;
+    width: 75%;
   }
 
   /* Project Page */
