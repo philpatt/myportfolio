@@ -16,25 +16,5 @@ $(document).ready(function() {
 
 
 
-function mouseEnter(pNum,skillA,skillB,skillC,skillD) {
-  console.log(pNum,skillA,skillB,skillC,skillD);
-  var projImg = document.getElementById('image');
-  var proj = document.getElementById('p');
-  var idle = document.getElementById('idle-image');  
-  console.log(skillA);
-  projImg.src ="img/projects/proj"+pNum+".jpg";
-  proj.style.visibility = 'visible';
-}
-
-function mouseLeave(pNum, skillA, skillB, skillC, skillD) {
-  var projImg = document.getElementById('image');
-  var proj = document.getElementById('p');
-  var idle = document.getElementById('idle-image');
-  projImg.src = "";
-  proj.style.visibility = 'hidden';
-  
-  // projImg.src = "img/projects/proj" + pNum + ".png";
-
-}
 
 

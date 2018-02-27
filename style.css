@@ -19,15 +19,17 @@ body {
   height: auto;
   display: block;
   position: static;
-
-
-}
-nav {
-  background-color:transparent !important;
 }
 a {
   text-decoration: none !important;
   color: white !important;
+}
+nav {
+  background-color:transparent !important;
+}
+nav a{
+  color: white !important;
+  
 }
 section {
 	width: 100%;
@@ -160,7 +162,7 @@ list-style: none;
 }
 .contact {
   position: relative;
-  margin: 25px 50px 0px 0px;
+  margin: 50px 50px 0px 0px;
   height: auto;
   padding: 0px;
   width: 12%;
