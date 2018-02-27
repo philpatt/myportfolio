@@ -160,10 +160,11 @@ list-style: none;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, .5);  
 }
 .contact {
-  margin: 20px;
+  position: relative;
+  margin: 25px 50px 0px 0px;
   height: auto;
   padding: 0px;
-  width: 100px;
+  width: 120px;
   display: inline-block;
 }
 .contact img{
@@ -174,6 +175,9 @@ list-style: none;
   transition: opacity .5s;
 }
 .contact_description {
+  position: absolute;
+  line-height: 100px;
+  font-size: 2vw;
   opacity: 0;
   transition: opacity .5s;
 }
