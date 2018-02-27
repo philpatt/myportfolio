@@ -177,9 +177,13 @@ list-style: none;
 .contact_description {
   position: absolute;
   line-height: 100px;
-  font-size: 2vw;
+  font-size: 30px;
   opacity: 0;
   transition: opacity .5s;
+}
+.contact-linkedin {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word;
 }
 .contact:hover img{
   opacity: 0;
