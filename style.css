@@ -132,7 +132,6 @@ list-style: none;
   transition: opacity 1s linear;
 }
 .fade-out {
-  visibility: hidden;
   opacity: 0;
   background-color: #BACCE2;
   transition: opacity 1s linear;
