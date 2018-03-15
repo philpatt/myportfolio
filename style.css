@@ -1,11 +1,7 @@
 /* ----------------------------------------------- */
 /* ------------------ Basic page layout ---------- */
 /* ----------------------------------------------- */
-/* body{
 
-  background-color: rgb(119,136,153);  
-  font-family: 'Montserrat', sans-serif !important;  
-} */
 html,
 body {
   padding: 0 !important;
