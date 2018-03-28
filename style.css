@@ -204,7 +204,7 @@ list-style: none;
 .proj-content {
   padding: 0 !important;
   height: auto;
-  /* position: relative; */
+  position: relative;
 }
 /* indvdual project section */
 
